@@ -16,8 +16,7 @@ public class Practice_FrameWork_Class extends BaseTest {
 	public String testCaseName = "LoginTest";
 	@Test(dataProvider ="getData")
 	public void test(Hashtable<String,String> data) {
-		
-		
+			
 	    test = rep.startTest("test");
 		//init();
 		if(!DataUtil.isRunnable(testCaseName, xls) ||  data.get("Runmode").equals("N")){
